@@ -1,6 +1,9 @@
 // automatizador codigo de johnson
 
+// numBits = numero de bits que va a tener el codigo
+// decimal = decimal que se quiere saber
 const johnson = (numBits, decimal = -1) => {
+	// crea el codigo de jhonson
 	let arrayJohnson = [];
 	for (let i = 0; i < numBits; i++) {
 		let array = [];
@@ -24,10 +27,11 @@ const johnson = (numBits, decimal = -1) => {
 		array = array.join('');
 		arrayJohnson.push(array);
 	}
+	// devuelve el decimal que se busca
 	if (decimal !== -1) {
 		return arrayJohnson[decimal];
 	}
 	return arrayJohnson;
 };
 
-console.log(johnson(12));
+console.log(johnson(30));
