@@ -8,3 +8,6 @@ const decimalBinario = num => {
 };
 
 console.log(decimalBinario(10));
+
+export { decimalBinario };
+// module.exports = { decimalBinario };

@@ -12,9 +12,16 @@ const binarioOctal = num => {
 	return numero;
 };
 
-const binarioHexadesimal = num => {
+const binarioHexadecimal = num => {
 	numero = parseInt(num, 2).toString(16).toUpperCase();
 	return numero;
 };
 
 console.log(binarioDecimal('1000110'));
+
+export { binarioDecimal, binarioHexadecimal, binarioOctal };
+// module.exports = {
+// 	binarioDecimal,
+// 	binarioHexadecimal,
+// 	binarioOctal,
+// };

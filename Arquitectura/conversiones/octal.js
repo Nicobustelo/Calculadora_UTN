@@ -8,3 +8,6 @@ const octalBinario = num => {
 };
 
 console.log(octalBinario(10));
+
+export { octalBinario };
+// module.exports = { octalBinario };

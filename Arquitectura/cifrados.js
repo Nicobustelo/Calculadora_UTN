@@ -1,4 +1,4 @@
-// cifrado con el signo "+" y todos las letras del abecedario menos la "ñ"
+// cifrado con el signo "+" y todos las letras del abecedario
 
 // todavia no esta bien
 const cifradoUTN_minuscula_entero = {

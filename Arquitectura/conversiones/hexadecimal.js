@@ -8,3 +8,6 @@ const hexadecimalBinario = num => {
 };
 
 console.log(hexadecimalBinario('A'));
+
+export { hexadecimalBinario };
+// module.exports = { hexadecimalBinario };
