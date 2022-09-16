@@ -10,11 +10,11 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0 10px;
+	padding: 30px 10px 0px;
 	min-height: 100vh;
 	background: #5372f0;
 }
-.container {
+.bases-container {
 	max-width: 690px;
 	width: 100%;
 	padding: 30px;
@@ -126,6 +126,19 @@ li,
 	font-size: 17px;
 	border-radius: 5px;
 	background: #5372f0;
+}
+
+.titulo_bases {
+	font-family: 'Poppins', sans-serif;
+	font-size: 25px;
+	text-align: center;
+}
+
+.page-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 @media (max-width: 660px) {
