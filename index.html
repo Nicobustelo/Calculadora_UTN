@@ -20,7 +20,7 @@
 						<textarea
 							spellcheck="false"
 							class="from-text"
-							placeholder="Insertar Texto"
+							placeholder="Insertar Numero"
 						></textarea>
 						<textarea
 							spellcheck="false"
@@ -49,7 +49,7 @@
 				<button>Traducir</button>
 			</div>
 			<br />
-
+			<br />
 			<div>
 				<a
 					href="https://planetcalc.com/748/"
@@ -117,6 +117,80 @@
 					}
 					embedCalculatorWidget();
 				</script>
+			</div>
+			<br />
+			<div>
+				<div>
+					<a
+						href="https://planetcalc.com/910/"
+						data-lang="es"
+						data-code=""
+						data-colors="#263238,#435863,#090c0d,#fa7014,#fb9b5a,#c25004"
+						data-v="4170"
+						>PLANETCALC, Calculadora binaria</a
+					>
+					<script>
+						function embedCalculatorWidget() {
+							function k(a) {
+								a.origin == c.replace('//', '//embed.') &&
+									((a = JSON.parse(a.data)),
+									a.height &&
+										e == a.id &&
+										f == a.code &&
+										(d.height = a.height));
+							}
+							var b = document.getElementsByTagName('script');
+							b = b[b.length - 1];
+							b = b.parentNode;
+							b.style.textAlign = 'right';
+							var a = b.getElementsByTagName('a')[0],
+								f = a.getAttribute('data-code'),
+								l = a.getAttribute('data-lang'),
+								m = a.getAttribute('data-v'),
+								n = a.getAttribute('data-colors').replace(/#/g, ''),
+								c = a.href,
+								g = c.lastIndexOf('/'),
+								h = c.lastIndexOf('/', g - 1),
+								e = c.substring(h + 1, g);
+							c = c.substring(0, h);
+							a = a.style;
+							a.textDecoration = 'none';
+							a.color = 'black';
+							a.backgroundImage = "url('" + c + "/img/lic/by-sa_s.png')";
+							a.backgroundPosition = 'left,center';
+							a.backgroundRepeat = 'no-repeat';
+							a.paddingLeft = '44px';
+							a.paddingTop = '10px';
+							a.paddingBottom = '10px';
+							a.paddingRight = '20px';
+							a.fontFamily = 'Roboto,sans-serif';
+							a.fontSize = '12px';
+							a.display = 'inline-block';
+							a.boxShadow = 'none';
+							window.addEventListener && window.addEventListener('message', k);
+							var d = document.createElement('iframe');
+							d.src =
+								c.replace('//', '//embed.') +
+								'/embed3/?id=' +
+								e +
+								'&_d=' +
+								f +
+								'&locale=' +
+								l +
+								'&colors=' +
+								n +
+								'&v=' +
+								m;
+							d.style.borderWidth = 0;
+							d.style.width = '100%';
+							d.style.marginBottom = '0';
+							d.style.borderRadius = '10px';
+							d.style.background = '#fff';
+							b.insertBefore(d, b.firstChild);
+						}
+						embedCalculatorWidget();
+					</script>
+				</div>
 			</div>
 		</div>
 

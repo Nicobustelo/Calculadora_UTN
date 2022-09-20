@@ -6,13 +6,19 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
+
 body {
+	background: #032740 url(images/DeepBlue20/background.png?version=1) no-repeat
+		center top;
+	color: #000;
+	line-height: 1.4;
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 13px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 30px 10px 0px;
 	min-height: 100vh;
-	background: #5372f0;
 }
 .bases-container {
 	max-width: 690px;
@@ -115,7 +121,7 @@ li,
 .controls i:active {
 	transform: scale(0.9);
 }
-.container button {
+.bases-container button {
 	width: 100%;
 	padding: 14px;
 	outline: none;
@@ -142,7 +148,7 @@ li,
 }
 
 @media (max-width: 660px) {
-	.container {
+	.bases-container {
 		padding: 20px;
 	}
 	.wrapper .text-input {
@@ -158,7 +164,7 @@ li,
 	.controls .row .icons {
 		display: none;
 	}
-	.container button {
+	.bases-container button {
 		padding: 13px;
 		font-size: 16px;
 	}
